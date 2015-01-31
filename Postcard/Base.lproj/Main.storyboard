@@ -113,6 +113,15 @@
                                     <rect key="frame" x="16" y="245" width="334" height="30"/>
                                 </variation>
                             </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJy-pD-qOr">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="145" width="234" height="41"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -124,6 +133,7 @@
                                 <exclude reference="VSV-jN-9cn"/>
                                 <exclude reference="LBw-fY-2Ar"/>
                                 <exclude reference="lBt-DG-ZxY"/>
+                                <exclude reference="zJy-pD-qOr"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -134,10 +144,12 @@
                                 <include reference="VSV-jN-9cn"/>
                                 <include reference="LBw-fY-2Ar"/>
                                 <include reference="lBt-DG-ZxY"/>
+                                <include reference="zJy-pD-qOr"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="eMailLabelName" destination="zJy-pD-qOr" id="6QZ-Lr-Gn6"/>
                         <outlet property="enterMessageTextFIeld" destination="VSV-jN-9cn" id="s6V-vD-Hx0"/>
                         <outlet property="enterNameTextField" destination="lBt-DG-ZxY" id="itO-hR-Ryk"/>
                         <outlet property="mailButton" destination="LBw-fY-2Ar" id="JLE-CT-C9S"/>
